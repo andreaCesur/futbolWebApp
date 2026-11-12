@@ -44,7 +44,8 @@ Object oSelectEntrenador is a cWebView
         Set pbFillHeight to True
         Set pbShowHeader to True
         Set piSortColumn to 0
-
+        
+        
         Object oentrenadorNombre is a cWebColumn
             Entry_Item entrenador.Nombre
             Set psCaption to "Nombre"
