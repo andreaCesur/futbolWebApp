@@ -54,7 +54,7 @@ Object oSelectEntrenador is a cWebView
 
         Object oentrenadorApellido is a cWebColumn
             Entry_Item entrenador.Apellido
-            Set psCaption to "Apellidos"
+            Set psCaption to "Apellido"
             Set piWidth to 360
         End_Object 
 
