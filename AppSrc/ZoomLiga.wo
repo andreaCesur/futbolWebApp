@@ -13,7 +13,7 @@ Use cligaDataDictionary.dd
 
 Object oZoomLiga is a cWebView
     Set piColumnCount to 12
-    Set psCaption to "ZoomLiga"
+    Set psCaption to "Liga"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtZoom
     Set pbShowCaption to False
@@ -42,7 +42,7 @@ Object oZoomLiga is a cWebView
                 Set piColumnSpan to 8
                 Set piColumnIndex to 0
                 Set peLabelPosition to lpTop
-                Set psLabel to "Nombre de la Liga"
+                Set psLabel to "Nombre de la Liga:"
         End_Object 
 
         Object oligaPais is a cWebForm
@@ -50,7 +50,7 @@ Object oZoomLiga is a cWebView
                 Set piColumnSpan to 4
                 Set piColumnIndex to 8
                 Set peLabelPosition to lpTop
-                Set psLabel to "País"
+                Set psLabel to "País:"
         End_Object 
 
         End_Object
@@ -62,7 +62,7 @@ Object oZoomLiga is a cWebView
                 Entry_Item liga.Equipos
                 Set piColumnIndex to 0
                 Set peLabelPosition to lpTop
-                Set psLabel to "Equipos Inscritos"
+                Set psLabel to "Equipos Inscritos:"
                 Set peAlign to alignLeft
                 
             End_Object
@@ -77,7 +77,7 @@ Object oZoomLiga is a cWebView
                 Set piColumnSpan to 6
                 Set piColumnIndex to 6
                 Set peLabelPosition to lpTop
-                Set psLabel to "Límite Máximo de Equipos"
+                Set psLabel to "Límite Máximo de Equipos:"
                 Set peAlign to alignLeft
             End_Object 
             
