@@ -11,11 +11,6 @@
 *.prn
 *.dep
 *.manifest
-<<<<<<< HEAD
-*.dsk
-*.mtd
-=======
->>>>>>> 5484385cf4da4415128148b0382574edb72f77ca
 
 # Archivos de la base de datos embebida DataFlex
 *.dat
@@ -32,24 +27,4 @@
 
 # Temporales y caché web
 /AppHtml/Cache/
-<<<<<<< HEAD
 /AppHTML/Index.html.bak
-
-# Archivos de registro y ejecutables compilados
-[Pp]rograms/*.log
-[Pp]rograms/*.exe
-[Pp]rograms/*.dll
-[Pp]rograms/WebApp.log
-
-# Caché e intermedios del servidor Web
-[Aa]ppHtml/Cache/*
-[Aa]ppHtml/cache/*
-
-# Archivos temporales de DataFlex y copias de seguridad
-*.bak
-*.tmp
-*.err
-*.~*
-=======
-/AppHTML/Index.html.bak
->>>>>>> 5484385cf4da4415128148b0382574edb72f77ca
