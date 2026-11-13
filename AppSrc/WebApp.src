@@ -1,6 +1,9 @@
 ﻿Use AllWebAppClasses.pkg
 Use cConnection.pkg
+<<<<<<< HEAD
 Use cWebMenuItem.pkg
+=======
+>>>>>>> 5484385cf4da4415128148b0382574edb72f77ca
 
 Object oApplication is a cApplication
     Object oConnection is a cConnection
@@ -52,6 +55,7 @@ Object oWebApp is a cWebApp
 
                 Object oViewMenu is a cWebMenuItem
                     Set psCaption to C_$View
+<<<<<<< HEAD
 
                     Object oSelectLigaItem1 is a cWebMenuItem
                         Set psCaption to "SelectLiga"
@@ -63,6 +67,8 @@ Object oWebApp is a cWebApp
                                 Send NavigatePath
                         End_Procedure
                     End_Object
+=======
+>>>>>>> 5484385cf4da4415128148b0382574edb72f77ca
                 End_Object
 
                 Object oSignOut_itm is a cWebMenuItem
@@ -144,8 +150,11 @@ Object oWebApp is a cWebApp
     Use WebResourceManager.wo
     
     Use Dashboard.wo
+<<<<<<< HEAD
     Use ZoomLiga.wo
     Use SelectLiga.wo
+=======
+>>>>>>> 5484385cf4da4415128148b0382574edb72f77ca
     Set phoDefaultView to oDashboard
 
 End_Object

@@ -11,8 +11,11 @@
 *.prn
 *.dep
 *.manifest
+<<<<<<< HEAD
 *.dsk
 *.mtd
+=======
+>>>>>>> 5484385cf4da4415128148b0382574edb72f77ca
 
 # Archivos de la base de datos embebida DataFlex
 *.dat
@@ -29,6 +32,7 @@
 
 # Temporales y caché web
 /AppHtml/Cache/
+<<<<<<< HEAD
 /AppHTML/Index.html.bak
 
 # Archivos de registro y ejecutables compilados
@@ -46,3 +50,6 @@
 *.tmp
 *.err
 *.~*
+=======
+/AppHTML/Index.html.bak
+>>>>>>> 5484385cf4da4415128148b0382574edb72f77ca
