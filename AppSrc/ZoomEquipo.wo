@@ -11,8 +11,6 @@ Use cWebForm.pkg
 Use cligaDataDictionary.dd
 Use cequipoDataDictionary.dd
 
-WebRegisterPath ntNavigateForward oSelectLiga
-
 Object oZoomEquipo is a cWebView
     Set piColumnCount to 12
     Set psCaption to "Equipo"
@@ -66,8 +64,10 @@ Object oZoomEquipo is a cWebView
                 Set pbPromptButton to True
                 Set piColumnSpan to 6
                 
+                WebRegisterPath ntNavigateForward oSelectLiga
+                
                 Procedure OnPrompt
-                Send NavigatePath
+                    Send NavigatePath
                 End_Procedure
                 
                     
@@ -82,10 +82,7 @@ Object oZoomEquipo is a cWebView
                 Set psLabel to "País:"
                 Set pbReadOnly to True
                 
-                Procedure OnPrompt
-                Send NavigatePath
-                End_Procedure
-                
+               
             End_Object
             
             
