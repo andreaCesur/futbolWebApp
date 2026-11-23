@@ -236,7 +236,7 @@ Object oZoomJugador is a cWebView
         Case End
         
         If (HasRecord(Server(Self))) Begin 
-            Send SetHeaderCaption ("Jugador:"*jugador.Nombre) 
+            Send SetHeaderCaption ("Jugador:"*jugador.Nombre*jugador.Apellido) 
             Send SetBreadCrumbCaption (jugador.Nombre*jugador.Apellido) 
         End 
         Else Begin 
