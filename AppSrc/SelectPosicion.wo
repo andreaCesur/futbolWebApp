@@ -142,8 +142,10 @@ Object oSelectPosicion is a cWebView
                 Case Break
 
             Case Else // must be nfUndefined
-                // This may be the start of a drilldown query or this may be used for some kind of custom query.
-
+                // Las tablas jugador y posicion no tienen una relacion directa entre ellas. Existe una relación de muchos a muchos mediante 
+                // la tabla intermedia jugadorposicion, que contiene las claves JugadorID y PosicionID.
+                // Al no existir una relacion directa entre los Data Dictionaries principales de ambas vistas, esta navegacion 
+                // se identifica como nfUndefined
         Case End
 
     End_Procedure

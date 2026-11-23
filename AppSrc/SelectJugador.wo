@@ -103,7 +103,7 @@ Object oSelectJugador is a cWebView
                     Send NavigateClose Self
                     Case Break
 
-                Case Else // must be nfUndefined
+                Case Else
                     Send NavigateForward of oZoomJugador Self
 
             Case End
