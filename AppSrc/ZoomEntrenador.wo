@@ -198,6 +198,15 @@ Object oZoomEntrenador is a cWebView
             Case Else // must be nfUndefined
 
         Case End
+        
+        If (HasRecord(Server(Self))) Begin 
+            Send SetHeaderCaption ("Entrenador:"*entrenador.Nombre) 
+            Send SetBreadCrumbCaption (entrenador.Nombre*entrenador.Apellido) 
+        End 
+        Else Begin 
+            Send SetHeaderCaption "Nuevo entrenador" 
+            Send SetBreadCrumbCaption "Nuevo"
+        End
 
         Send SetActionButtons
 

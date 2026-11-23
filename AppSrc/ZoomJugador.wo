@@ -223,20 +223,26 @@ Object oZoomJugador is a cWebView
     Procedure OnNavigateForward tWebNavigateData NavigateData Integer hoInvokingView Integer hoInvokingObject
         Case Begin
             Case (NavigateData.eNavigateType = nfFromMain)
-                // If from main, this is a propbably a main file Select to Zoom.
                 Case Break
 
             Case (NavigateData.eNavigateType = nfFromParent)
-                // If from parent, this is a constrained drill down.
                 Case Break
 
             Case (NavigateData.eNavigateType = nfFromChild)
-                // If from child, this is a probably a parent Zoom from a Zoom.
                 Case Break
 
-            Case Else // must be nfUndefined
+            Case Else
 
         Case End
+        
+        If (HasRecord(Server(Self))) Begin 
+            Send SetHeaderCaption ("Jugador:"*jugador.Nombre) 
+            Send SetBreadCrumbCaption (jugador.Nombre*jugador.Apellido) 
+        End 
+        Else Begin 
+            Send SetHeaderCaption "Nuevo jugador" 
+            Send SetBreadCrumbCaption "Nuevo"
+        End        
 
         Send SetActionButtons
 

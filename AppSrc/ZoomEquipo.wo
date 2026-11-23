@@ -175,16 +175,23 @@ Object oZoomEquipo is a cWebView
                 Case Break
 
             Case (NavigateData.eNavigateType = nfFromParent)
-                // If from parent, this is a constrained drill down.
                 Case Break
 
             Case (NavigateData.eNavigateType = nfFromChild)
-                // If from child, this is a probably a parent Zoom from a Zoom.
                 Case Break
 
-            Case Else // must be nfUndefined
+            Case Else
 
         Case End
+        
+        If (HasRecord(Server(Self))) Begin 
+            Send SetHeaderCaption ("Equipo:"*equipo.Nombre) 
+            Send SetBreadCrumbCaption (equipo.Nombre) 
+        End 
+        Else Begin 
+            Send SetHeaderCaption "Nuevo equipo" 
+            Send SetBreadCrumbCaption "Nuevo"
+        End
 
         Send SetActionButtons
 

@@ -134,22 +134,21 @@ Object oSelectLiga is a cWebView
 
         Case Begin
             Case (NavigateData.eNavigateType = nfFromParent)
-                // If from parent, this is a constrained drill down
                 Case Break
 
             Case (NavigateData.eNavigateType = nfFromChild)
-                // If from child, this is a probably a parent lookup from a Zoom
                 Case Break
 
             Case (NavigateData.eNavigateType = nfFromMain)
-                // If from main, this is a probably a main-file lookup from a Zoom
                 WebSet pbRender of oDetailButton to False
                 Case Break
 
             Case Else // must be nfUndefined
-                // This may be the start of a drilldown query or this may be used for some kind of custom query.
 
         Case End
+        
+        Send SetHeaderCaption "Lista de Ligas"
+        Send SetBreadcrumbCaption "Ligas"
 
     End_Procedure
 
